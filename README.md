@@ -1,31 +1,10 @@
-# Example App Store Template
+# Runtipi Appstore
 
-This repository serves as a template for creating your own custom app store for the Runtipi platform. Use this as a starting point to create and share your own collection of applications.
+This repository is my personal, opinionated version of the official Runtipi appstore, containing various applications configured to suit my own homelab setup.
 
-## Repository Structure
+> [!WARNING]
+> This is a private repository tailored for my personal use. You are free to use it in your own environment, but I cannot provide support, and I am not responsible for any data loss or issues resulting from updates to any applications in this repository.
 
-- **apps/**: Contains individual app directories
+## Apps Policy
 
-  - Each app has its own folder (e.g., `whoami/`) with the following structure:
-    - `config.json`: App configuration file
-    - `docker-compose.json`: Docker setup for the app
-    - `metadata/`: Contains app visuals and descriptions
-      - `description.md`: Markdown description of the app
-      - `logo.jpg`: App logo image
-
-- **tests/**: Contains test files for the app store
-
-  - `apps.test.ts`: Test suite for validating apps
-
-## Getting Started
-
-This repository is intended to serve as a template for creating your own app store. Follow these steps to get started:
-
-1. Click the "Use this template" button to create a new repository based on this template
-2. Customize the apps or add your own app folders in the `apps/` directory
-3. Test your app store by using it with Runtipi
-
-## Documentation
-
-For detailed instructions on creating your own app store, please refer to the official guide:
-[Create Your Own App Store Guide](https://runtipi.io/docs/guides/create-your-own-app-store)
+Because this is a privately curated repository, I do not accept feature requests or app addition requests. If you wish to make modifications, feel free to fork the repository and maintain your own version. Please note that applications may be removed at any time without notice.

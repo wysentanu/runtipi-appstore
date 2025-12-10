@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json",
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "brave",
+      "image": "kasmweb/brave:1.18.0-rolling-weekly",
+      "isMain": true,
+      "internalPort": 6901,
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/Downloads",
+          "containerPath": "/home/kasm-user/Downloads"
+        }
+      ],
+      "environment": [
+        {
+          "key": "VNC_PW",
+          "value": "${VNC_PW}"
+        },
+        {
+          "key": "LAUNCH_URL",
+          "value": "https://runtipi.io"
+        }
+      ],
+      "addToMainNetwork": true,
+      "shmSize": "512m"
+    }
+  ]
+}

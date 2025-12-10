@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.runtipi.io/v2/app-info.json",
+  "name": "Brave",
+  "id": "brave",
+  "version": "1.18.0-rolling-weekly",
+  "tipi_version": 1,
+  "available": true,
+  "exposable": true,
+  "dynamic_config": true,
+  "https": true,
+  "port": 6901,
+  "short_desc": "Secure streamed Brave browser",
+  "description": "Runs Brave in a Kasm container for private, isolated, zero-footprint browsing accessible from any web client.",
+  "author": "Kasm Technologies",
+  "categories": ["utilities"],
+  "source": "#",
+  "website": "https://hub.docker.com/r/kasmweb/brave",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1765368680027,
+  "updated_at": 1765368680027,
+  "min_tipi_version": "4.5.0",
+  "form_fields": [
+    {
+      "type": "password",
+      "label": "Password",
+      "max": 50,
+      "min": 3,
+      "required": true,
+      "env_variable": "VNC_PW"
+    }
+  ]
+}
