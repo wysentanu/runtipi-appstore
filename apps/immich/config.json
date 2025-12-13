@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.runtipi.io/v2/app-info.json",
+  "name": "Immich",
+  "id": "immich",
+  "version": "v2.3.1",
+  "tipi_version": 1,
+  "available": true,
+  "exposable": true,
+  "dynamic_config": true,
+  "https": false,
+  "port": 8128,
+  "short_desc": "Photo and video backup solution directly from your mobile phone.",
+  "description": "Photo and video backup solution directly from your mobile phone.",
+  "author": "Alex Tran",
+  "categories": ["data", "photography"],
+  "source": "https://github.com/immich-app/immich",
+  "website": "https://www.immich.app/",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1765615557133,
+  "updated_at": 1765615557133,
+  "min_tipi_version": "4.5.0",
+  "form_fields": [
+    {
+      "type": "random",
+      "label": "DB_PASSWORD",
+      "min": 32,
+      "env_variable": "DB_PASSWORD"
+    },
+    {
+      "type": "random",
+      "label": "JWT_SECRET",
+      "min": 32,
+      "env_variable": "JWT_SECRET"
+    },
+    {
+      "type": "random",
+      "label": "IMMICH_TYPESENSE_API_KEY",
+      "min": 32,
+      "env_variable": "IMMICH_TYPESENSE_API_KEY"
+    }
+  ]
+}
