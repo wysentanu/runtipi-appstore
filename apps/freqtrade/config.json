@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schemas.runtipi.io/v2/app-info.json",
+    "name": "Freqtrade",
+    "id": "freqtrade",
+    "version": "stable",
+    "tipi_version": 1,
+    "available": true,
+    "exposable": true,
+    "dynamic_config": true,
+    "https": false,
+    "port": 8080,
+    "short_desc": "Free, open source crypto trading bot",
+    "description": "Freqtrade is a free and open source crypto trading bot written in Python. It is designed to support all major exchanges and be controlled via Telegram or webUI.",
+    "author": "Freqtrade",
+    "categories": [
+        "utilities",
+        "data"
+    ],
+    "source": "https://github.com/freqtrade/freqtrade",
+    "website": "https://www.freqtrade.io",
+    "supported_architectures": [
+        "arm64",
+        "amd64"
+    ],
+    "created_at": 1738033319000,
+    "updated_at": 1738033319000,
+    "min_tipi_version": "4.5.0",
+    "form_fields": []
+}

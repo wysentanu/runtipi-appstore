@@ -15,10 +15,13 @@ containing various applications configured to suit my own homelab.
 
 ## Available Apps
 
-| Name                                                                                                            | Logo                                                                | Description                          | Note                                                                  |
-|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------|
-| Brave <sup>[**1**](https://github.com/brave/brave-browser) [**2**](https://hub.docker.com/r/kasmweb/brave)<sup> | <img src="apps/brave/metadata/logo.jpg" alt="Brave" width="48" />   | Secure streamed Brave browser        |                                                                       |
-| [Immich](https://github.com/immich-app/immich)                                                                  | <img src="apps/immich/metadata/logo.jpg" alt="Immich" width="48" /> | Photo & video backup from your phone | Configured to leverage the RK3566 NPU for machine learning workloads. |
+| Name                                                                        | Logo                                                                    | Description                                                               | Note                                                                  |
+|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| [Brave](https://hub.docker.com/r/kasmweb/brave)                              | <img src="apps/brave/metadata/logo.jpg" alt="Brave" width="48" />       | Secure streamed Brave browser                                             |                                                                       |
+| [Freqtrade](https://github.com/freqtrade/freqtrade)                         | <img src="apps/freqtrade/metadata/logo.jpg" alt="Freqtrade" width="48" /> | Free, open source crypto trading bot                                      |                                                                       |
+| [Immich](https://github.com/immich-app/immich)                               | <img src="apps/immich/metadata/logo.jpg" alt="Immich" width="48" />     | Photo and video backup solution directly from your mobile phone           | Configured to leverage the RK3566 NPU for machine learning workloads. |
+| [Linkding](https://github.com/sissbruecker/linkding)                        | <img src="apps/linkding/metadata/logo.jpg" alt="Linkding" width="48" /> | Self-hosted bookmark manager designed to be minimal, fast, and easy       |                                                                       |
+| [Tailscale](https://github.com/tailscale/tailscale)                         | <img src="apps/tailscale/metadata/logo.jpg" alt="Tailscale" width="48" /> | Zero-config VPN using WireGuard and 2FA                                   | No GUI (CLI-managed).                                                 |
 
 ## Apps Policy
 

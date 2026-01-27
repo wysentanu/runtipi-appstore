@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json",
+    "schemaVersion": 2,
+    "services": [
+        {
+            "name": "freqtrade",
+            "image": "freqtradeorg/freqtrade:stable",
+            "isMain": true,
+            "internalPort": 8080,
+            "volumes": [
+                {
+                    "hostPath": "${APP_DATA_DIR}/user_data",
+                    "containerPath": "/freqtrade/user_data"
+                }
+            ],
+            "command": [
+                "trade",
+                "--logfile",
+                "/freqtrade/user_data/logs/freqtrade.log",
+                "--db-url",
+                "sqlite:////freqtrade/user_data/tradesv3.sqlite",
+                "--config",
+                "/freqtrade/user_data/config.json",
+                "--strategy",
+                "SampleStrategy",
+                "--dry-run"
+            ],
+            "addToMainNetwork": true
+        }
+    ]
+}
