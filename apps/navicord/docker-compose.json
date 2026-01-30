@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.runtipi.io/v2/dynamic-compose.json",
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "navicord",
+      "image": "logixism/navicord:latest",
+      "isMain": true,
+      "environment": [
+        {
+          "key": "DISCORD_CLIENT_ID",
+          "value": "${DISCORD_CLIENT_ID}"
+        },
+        {
+          "key": "DISCORD_TOKEN",
+          "value": "${DISCORD_TOKEN}"
+        },
+        {
+          "key": "LASTFM_API_KEY",
+          "value": "${LASTFM_API_KEY}"
+        },
+        {
+          "key": "NAVIDROME_SERVER",
+          "value": "${NAVIDROME_SERVER}"
+        },
+        {
+          "key": "NAVIDROME_USERNAME",
+          "value": "${NAVIDROME_USERNAME}"
+        },
+        {
+          "key": "NAVIDROME_PASSWORD",
+          "value": "${NAVIDROME_PASSWORD}"
+        },
+        {
+          "key": "ACTIVITY_NAME",
+          "value": "${ACTIVITY_NAME}"
+        },
+        {
+          "key": "POLLING_TIME",
+          "value": "${POLLING_TIME}"
+        }
+      ]
+    }
+  ]
+}

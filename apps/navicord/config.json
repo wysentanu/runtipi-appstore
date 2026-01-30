@@ -1,0 +1,85 @@
+{
+  "$schema": "https://schemas.runtipi.io/v2/app-info.json",
+  "name": "Navicord",
+  "id": "navicord",
+  "version": "latest",
+  "tipi_version": 1,
+  "available": true,
+  "exposable": false,
+  "dynamic_config": true,
+  "no_gui": true,
+  "https": false,
+  "short_desc": "Headless Discord Rich Presence client for Navidrome.",
+  "description": "Headless Discord Rich Presence client for Navidrome with album art and timestamps.",
+  "author": "logixism",
+  "categories": ["music"],
+  "source": "https://github.com/logixism/navicord",
+  "website": "https://github.com/logixism/navicord",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1769752515929,
+  "updated_at": 1769752515929,
+  "min_tipi_version": "4.5.0",
+  "form_fields": [
+    {
+      "type": "text",
+      "label": "Discord Client ID",
+      "required": true,
+      "hint": "Discord application client ID",
+      "placeholder": "805831541070495744",
+      "env_variable": "DISCORD_CLIENT_ID"
+    },
+    {
+      "type": "password",
+      "label": "Discord Token",
+      "required": true,
+      "hint": "Discord account token",
+      "env_variable": "DISCORD_TOKEN",
+      "max": 1024
+    },
+    {
+      "type": "password",
+      "label": "Last.fm API Key",
+      "required": true,
+      "hint": "Used to fetch album art",
+      "placeholder": "098f6bcd4621d373cade4e832627b4f6",
+      "env_variable": "LASTFM_API_KEY"
+    },
+    {
+      "type": "text",
+      "label": "Navidrome Server",
+      "required": true,
+      "hint": "Navidrome base URL",
+      "placeholder": "https://music.example.com",
+      "env_variable": "NAVIDROME_SERVER"
+    },
+    {
+      "type": "text",
+      "label": "Navidrome Username",
+      "required": true,
+      "placeholder": "navidrome",
+      "env_variable": "NAVIDROME_USERNAME"
+    },
+    {
+      "type": "password",
+      "label": "Navidrome Password",
+      "required": true,
+      "env_variable": "NAVIDROME_PASSWORD"
+    },
+    {
+      "type": "text",
+      "label": "Activity Name",
+      "required": false,
+      "hint": "Overrides the activity label (ARTIST, ALBUM, TRACK, or custom)",
+      "placeholder": "TRACK",
+      "env_variable": "ACTIVITY_NAME"
+    },
+    {
+      "type": "number",
+      "label": "Polling Time (seconds)",
+      "required": false,
+      "hint": "How often to poll Navidrome (seconds)",
+      "placeholder": "1",
+      "env_variable": "POLLING_TIME"
+    }
+  ]
+}
